@@ -1,0 +1,8 @@
+flask
+tiktoken
+trafilatura
+PyPDF2
+requests
+langchain-google-genai
+langchain-tavily
+python-dotenv
