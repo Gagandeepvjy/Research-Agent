@@ -11,7 +11,7 @@ Atlas Guide is an AI-powered research assistant that automates web research and 
 -- Add your Gemini API Key and Tavily Search API key into .env file
 
 1. **User submits a query** via the web interface.
-2. **Search Node**: Tavily tool fetches up to 8 relevant sources for the query.
+2. **Search Node**: Tavily tool fetches up to 6 relevant sources for the query.
 3. **Extract Node**: For each source, trafilatura (HTML) or PyPDF2 (PDF) extracts readable text. Blocked or empty sources are skipped.
 4. **Repeat search/extract** until at least 2 sources with extractable content are found (up to 5 attempts).
 5. **Summarize Node**: Google Gemini LLM summarizes each source and extracts key points.
@@ -59,3 +59,4 @@ Submit a query like `Latest research on AI in education` or `Impact of Mediterra
 
 
    -Used copilot,zencoder for debugging and front end code
+
