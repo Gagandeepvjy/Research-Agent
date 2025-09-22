@@ -8,6 +8,8 @@ Atlas Guide is an AI-powered research assistant that automates web research and 
 
 ### Architecture & Workflow
 
+-- Add your Gemini API Key and Tavily Search API key into .env file
+
 1. **User submits a query** via the web interface.
 2. **Search Node**: Tavily tool fetches up to 8 relevant sources for the query.
 3. **Extract Node**: For each source, trafilatura (HTML) or PyPDF2 (PDF) extracts readable text. Blocked or empty sources are skipped.
@@ -54,5 +56,6 @@ Submit a query like `Latest research on AI in education` or `Impact of Mediterra
 
 
 ## AI tools used
+
 
    -Used copilot,zencoder for debugging and front end code
